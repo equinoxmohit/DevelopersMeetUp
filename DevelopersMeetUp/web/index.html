@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Developers Meet Up | Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+        <script src="assets/javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <style>
+            .mainbody
+            {
+                background-image: url('images/bg.jpg');
+                height: 635px;
+                margin-top: 0px;
+            }
+
+            .btn
+            {
+                height: 40px;
+                width: 220px;
+                font-size: 17px;
+                border: 1;
+                border-width: 2px;
+                color: #231F20;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid" id="topbar" style="padding:0px !important;"> 
+            <!-- no full width if no overridden padding even if fluid is used. why? -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <!-- Logo -->
+                    <div class="navbar-header" style="padding-top:10px;">
+                        <a href="#" class="navbar-brand">
+                            Developer's Meet Up
+                        </a>
+                    </div>
+                    <button type="button" class="navbar-toggle" id="slide" data-toggle="collapse" 
+                            data-target=".navHeaderCollapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Menu Items -->
+                    <div class="collapse navbar-collapse navHeaderCollapse navbar-header" style="padding-top:10px;">
+                        <ul class="nav navbar-nav" style="margin-left:50px;">
+                            <li class="active"><a href="#">Home</a></li>		                   
+                            <li class="dropdown">
+                                <a href="add/add.jsp">Add Your Profile</a>
+                            </li>  
+                            <li class="dropdown">
+                                <a href="show/show.jsp">Developers Profile</a>
+                            </li>  
+                        </ul>
+                    </div>
+                    <!--Right align -->
+                    <div class="collapse navbar-collapse navHeaderCollapse navbar-header navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Designed And Developed By Mohit Paudel
+                                    <img src="images/user.jpg" class="img-circle" height="40"></a>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container-fluid mainbody">
+            <div class="h2 text-center" style="color:#fff;padding-top:12%;"> The Perfect Place For Developers To Meet and Make <br><br><span class="h1 text-center"> Applications</span>
+                <br><br>
+                <span class="glyphicon glyphicon-grain"></span> 
+            </div>
+            <a href="#down" class="btn btn-default center-block">Learn More</a>
+        </div>
+        <div class="container first">
+            <p><center>A programming language is a formal computer language or constructed language designed to communicate instructions to a machine, particularly a computer.<br> Programming languages can be used to create programs to control the behavior of a machine or to express algorithms.</center></p>
+    </div>
+    <br>
+    <h1 class="text-center">Fact About Different Programming Languages</h1>
+    <div id="accordion" class="panel-group">
+        <div class="panel panel-default" >
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                <div class="panel-heading" style="background-color:transparent;color:#231f20;">			
+                    <h1 class="panel-title">
+                        C
+                        <span class="glyphicon glyphicon-chevron-down" style="float:right;"></span>
+                    </h1>    
+                </div>
+            </a>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <ul>
+                        <li><b>C</b> was created in <b>1972</b> by <b>Ken Thompson</b> and <b>Dennis Ritchie</b>, researchers at AT&T's Bell Labs in Murray Hill, New Jersey.</li>
+                        <li><b>C</b> is a high-level programming language that is used to develop many kinds of software.</li>
+                        <li>Although it is a high-level language, <b>C</b> is capable of controlling the computer on which it operates at a low level.</li>
+                    </ul>
+                    <div class="pull-left">
+                        <a href="show/show.jsp" class="btn btn-default">Meet C Programmers </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                <div class="panel-heading" style="background-color:transparent;color:#231f20;">
+                    <h1 class="panel-title" id="down">
+                        Java
+                        <span class="glyphicon glyphicon-chevron-down" style="float:right;"></span>
+                    </h1>
+                </div>
+            </a>
+            <div id="collapseTwo" class="panel-collapse collapse ">
+                <div class="panel-body">
+                    <ul>
+                        <li><b>Sun Microsystems</b> created <b>Java</b>. <b>Oracle</b> now oversees <b>Java</b> after its acquisition of Sun in <b>2010</b>.</li>
+                        <li><b>Java</b> was originally called <b>Oak</b>.</li>
+                        <li> There are <b>9 million Java developers</b> worldwide.</li>
+                        <li>More than <b>95%</b> of enterprise desktop's run <b>Java</b></li>
+                        <li>After the programming language <b>C</b>, <b>Java</b> ranks No. <b>2</b> in popularity among programming languages.</li>
+                        <li>Java’s mascot, <b>Duke</b>, was created by <b>Joe Palrang</b>.</li>
+                    </ul>
+                    <div class="pull-left">
+                        <a href="show/show.jsp" class="btn btn-default">Meet Java Developers </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                <div class="panel-heading" style="background-color:transparent;color:#231f20;">			
+                    <h1 class="panel-title">
+                        PHP
+                        <span class="glyphicon glyphicon-chevron-down" style="float:right;"></span>
+                    </h1>    
+                </div>
+            </a>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <ul>
+                        <li><b>PHP</b> originally stood for <b>Personal Home Page</b>.</li>
+                        <li><b>PHP</b> which is now officially known as <b>Hypertext Preprocessor</b> was released in the year <b>1995</b>.</li>
+                        <li><b>PHP</b> was originally created by <b>Rasmus Lerdorf</b> in <b>1995</b>, and was written in original Common Gateway Interface (CGI) binaries.</li>
+                        <li>Some of the biggest online brands, such as <b>Facebook</b>,and <b>Yahoo!</b> are powered by <b>PHP</b>.</li>
+                    </ul>
+                    <div class="pull-left">
+                        <a href="show/show.jsp" class="btn btn-default">Meet PHP Developers </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="panel panel-default">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                <div class="panel-heading" style="background-color:transparent;color:#231f20;">
+                    <h1 class="panel-title">
+                        Python
+                        <span class="glyphicon glyphicon-chevron-down" style="float:right;"></span>
+                    </h1>
+                </div>
+            </a>
+            <div id="collapseFour" class="panel-collapse collapse ">
+                <div class="panel-body">
+                    <ul>
+                        <li>In <b>1991</b>, <b>Guido Van Rossum</b> made <b>python</b> programming language.</li>
+                        <li><b>Python</b> was named after a popular comedy <b>Monty Python’s Flying Circus</b>.</li>
+                        <li><b>Python</b> Language is one of the <b>easiest</b> programming language to learn.</li>
+                        <li><b>Jython</b> is the <b>java</b> implementation of <b>python</b> programming language</li>
+                    </ul>
+                    <div class="pull-left">
+                        <a href="show/show.jsp" class="btn btn-default">Meet Python Developers </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </div>
+    <br>
+
+
+
+    <footer>
+        <div class="footer" id="footer">
+            <div class="container">
+                <h5 class="pull-left"> Copyright &COPY; Mohit Paudel 2016 All right reserved. </h5>
+                <div class="pull-right">
+                    <ul class="social">
+                        <li> <a href="https://www.facebook.com/profile.php?id=100009484632088" target="_blank"> <i class=" fa fa-facebook">   </i> </a> </li>
+                        <li> <a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button" target="_blank"> <i class="fa fa-linkedin">   </i> </a> </li>
+                        <li> <a href="https://plus.google.com/u/1/106594817766466992702/posts" target="_blank"> <i class="fa fa-google-plus">   </i> </a> </li>
+                        <li> <a href="https://github.com/equinoxmohit?tab=repositories" target="_blank"> <i class="fa fa-github">   </i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            // hide .navbar first
+            $(".navbar").hide();
+
+            // fade in .navbar
+            $(function ()
+            {
+                $(window).scroll(function ()
+                {
+                    // set distance user needs to scroll before we fadeIn navbar
+                    if ($(this).scrollTop() > 500)
+                    {
+                        $('.navbar').fadeIn();
+                    }
+                    else
+                    {
+                        $('.navbar').fadeOut();
+                    }
+                });
+            });
+        });
+    </script> 
+</body>
+</html>
