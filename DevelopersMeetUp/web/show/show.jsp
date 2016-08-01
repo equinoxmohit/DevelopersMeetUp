@@ -2,7 +2,11 @@
 <%@page import="com.mohitpaudel.webdevelopment.dao.ProgrammerDao"%>
 <%@page import="com.mohitpaudel.webdevelopment.entity.Programmer"%>
 <%@include file="../shared/header.jsp" %>
+
 <div class="container">
+    <div class="pull-left">
+        <a href="../index.html">Redirect to Home</a>        
+    </div>
     <div class="h1 text-center">Developer's Overview</div>
     <table class="table table-striped table-hover table-bordered">
         <tr>
@@ -15,6 +19,7 @@
             <td>Facebook Link</td>
             <td>GitHub Link</td>
             <td>View Profile</td>
+            <td>Send Email</td>
         </tr>
         <%
             ProgrammerDao pDao = new ProgrammerDaoImpl();
@@ -28,7 +33,8 @@
             <td><a href="<%=p.getLinkedin_link()%>" target="_blank"><i class=" fa fa-linkedin"></i></a></td>
             <td><a href="<%=p.getFacebook_link()%>" target="_blank"><i class=" fa fa-facebook"></i></a></td>
             <td><a href="<%=p.getGithub_link()%>" target="_blank"><i class=" fa fa-github"></i></a></td>
-            <td><a href="${pageContext.request.contextPath}/profile/profile.jsp?id=<%=p.getId()%>" class="btn btn-success btn-sm">View Profile</a></td>
+            <td><a href="${pageContext.request.contextPath}/profile/profile.jsp?id=<%=p.getId()%>" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-check"></span>View Profile</a></td>
+            <td><a href="${pageContext.request.contextPath}/email/formemail.jsp?id=<%=p.getId()%>" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-envelope"></span>Send Email</a></td>
         </tr> 
 
 
